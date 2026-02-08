@@ -105,15 +105,19 @@
                     <h4>Victorian Exterior</h4>
                     <p>Historic home exterior restoration with period-appropriate colors</p>
                 </div>
+                <!-- Kitchen Before/After Hover Effect -->
                 <div class="portfolio-item">
-                    <div class="portfolio-image placeholder-image kitchen-1">
+                    <div class="portfolio-image kitchen-hover">
+                        <img src="static/beforeKitchen.webp" alt="Kitchen Before" class="kitchen-before">
+                        <img src="static/afterKitchen.webp" alt="Kitchen After" class="kitchen-after">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-label">Before & After</span>
+                            <span class="portfolio-label">Hover to see After</span>
                         </div>
                     </div>
                     <h4>Kitchen Cabinet Refresh</h4>
                     <p>Professional cabinet painting for a modern, updated look</p>
                 </div>
+                <!-- End Kitchen Before/After Hover Effect -->
                 <div class="portfolio-item">
                     <div class="portfolio-image placeholder-image exterior-2">
                         <div class="portfolio-overlay">
@@ -242,5 +246,52 @@
     </footer>
 
     <script src="script.js"></script>
+    <style>
+    /* Kitchen before/after hover effect */
+    .kitchen-hover {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+        background: none;
+    }
+    .kitchen-hover .kitchen-before,
+    .kitchen-hover .kitchen-after {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.5s;
+    }
+    .kitchen-hover .kitchen-before {
+        z-index: 1;
+        opacity: 1;
+    }
+    .kitchen-hover .kitchen-after {
+        z-index: 2;
+        opacity: 0;
+    }
+    .kitchen-hover:hover .kitchen-after {
+        opacity: 1;
+    }
+    .kitchen-hover:hover .kitchen-before {
+        opacity: 0;
+    }
+    .kitchen-hover .portfolio-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 2rem;
+        pointer-events: none;
+    }
+    </style>
 </body>
 </html>

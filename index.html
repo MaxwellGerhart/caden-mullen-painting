@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caden Mullen Painting | Quality Residential Painting</title>
+    <title>Caden Mullen Painting | Quality Residential Painting — Central Pennsylvania</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,91 +17,121 @@
                 <div class="logo-text">
                     <a href="index.html" style="text-decoration:none;">
                         <h1>Caden Mullen</h1>
-                        <span class="subtitle">Painting LLC</span>
+                        <span class="subtitle">Painting &amp; Finishing &mdash; Est. Central PA</span>
                     </a>
                 </div>
             </div>
-            <nav class="nav">
+            <nav class="nav" id="main-nav">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
             </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
-        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <div class="hero-ornament top"></div>
-            <h2 class="hero-title">Transform Your Home<br>with Craftsmanship & Care</h2>
-            <p class="hero-subtitle">Quality residential painting rooted in tradition</p>
+            <span class="hero-eyebrow">Central Pennsylvania &mdash; Licensed &amp; Insured</span>
+            <h2 class="hero-title">Work That<br>Stands Behind You</h2>
+            <p class="hero-subtitle">Residential and commercial painting done with care, patience, and proper craft. No shortcuts. No crews you've never met.</p>
             <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-primary">View Our Work</a>
-                <a href="#contact" class="btn btn-secondary">Get a Free Quote</a>
+                <a href="portfolio.html" class="btn btn-primary">View Our Work</a>
+                <a href="contact.html" class="btn btn-secondary">Request an Estimate</a>
             </div>
-            <div class="hero-ornament bottom"></div>
+        </div>
+        <div class="hero-graphic">
+            <div class="hero-badge">
+                <div class="hero-badge-ring">
+                    <span class="hero-badge-inner">CM</span>
+                </div>
+                <span class="hero-badge-text">Trusted Craftsmanship</span>
+            </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Intro band -->
+    <div class="intro-band">
         <div class="container">
-            <div class="section-header">
-                <div class="ornamental-line"></div>
+            <div class="intro-stat reveal reveal-1">
+                <span class="intro-stat-num">100%</span>
+                <span class="intro-stat-label">Owner-Operated</span>
+            </div>
+            <div class="intro-stat reveal reveal-2">
+                <span class="intro-stat-num">Free</span>
+                <span class="intro-stat-label">Detailed Estimates</span>
+            </div>
+            <div class="intro-stat reveal reveal-3">
+                <span class="intro-stat-num">PA</span>
+                <span class="intro-stat-label">Licensed &amp; Insured</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal reveal-1">
+                <span class="section-label">What We Do</span>
                 <h2>Our Services</h2>
-                <div class="ornamental-line"></div>
+                <span class="gold-rule"></span>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card reveal reveal-2">
                     <h3>Interior Painting</h3>
-                    <p>From single rooms to whole-home transformations, we bring new life to your living spaces with meticulous attention to detail. Walls, ceilings, trim, cabinets, and more.</p>
+                    <p>From a single room to a full home, we prepare surfaces properly and apply paint with care. Clean lines, even coverage, no shortcuts on prep.</p>
                     <ul class="service-list">
-                        <li>Living Rooms & Bedrooms</li>
-                        <li>Kitchens & Bathrooms</li>
-                        <li>Trim & Crown Molding</li>
+                        <li>Living Rooms &amp; Bedrooms</li>
+                        <li>Kitchens &amp; Bathrooms</li>
+                        <li>Trim &amp; Crown Molding</li>
                         <li>Cabinet Refinishing</li>
                     </ul>
                 </div>
-                <div class="service-card">
+                <div class="service-card reveal reveal-3">
                     <h3>Exterior Painting</h3>
-                    <p>Protect and beautify your home's exterior with professional painting services. We handle siding, trim, decks, fences, and all outdoor surfaces with weather-resistant finishes.</p>
+                    <p>Siding, trim, decks, fences — we use quality materials suited to Pennsylvania weather and take the time to let each coat cure properly.</p>
                     <ul class="service-list">
-                        <li>House Siding & Trim</li>
-                        <li>Decks & Porches</li>
-                        <li>Fences & Railings</li>
-                        <li>Garage Doors & Shutters</li>
+                        <li>House Siding &amp; Trim</li>
+                        <li>Decks &amp; Porches</li>
+                        <li>Fences &amp; Railings</li>
+                        <li>Garage Doors &amp; Shutters</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <div class="section-header">
-                <div class="ornamental-line"></div>
-                <h2>Our Work</h2>
-                <div class="ornamental-line"></div>
+            <div class="portfolio-header-wrap">
+                <div class="section-header reveal reveal-1">
+                    <span class="section-label">Our Work</span>
+                    <h2>Recent Projects</h2>
+                    <span class="gold-rule"></span>
+                </div>
+                <p class="portfolio-intro reveal reveal-2">Every project photographed before and after — because the work should speak for itself.</p>
             </div>
-            <p class="portfolio-intro">Every project is a testament to our commitment to quality and craftsmanship</p>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-image placeholder-image interior-1">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-label">Before & After</span>
+                            <span class="portfolio-label">Interior</span>
                         </div>
                     </div>
                     <h4>Living Room Revival</h4>
                     <p>Complete interior transformation with custom color consultation</p>
                 </div>
+                </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image placeholder-image exterior-1">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-label">Before & After</span>
+                            <span class="portfolio-label">Exterior</span>
                         </div>
                     </div>
                     <h4>Victorian Exterior</h4>
@@ -123,7 +153,7 @@
                 <div class="portfolio-item">
                     <div class="portfolio-image placeholder-image exterior-2">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-label">Before & After</span>
+                            <span class="portfolio-label">Exterior</span>
                         </div>
                     </div>
                     <h4>Deck Restoration</h4>
@@ -132,7 +162,7 @@
                 <div class="portfolio-item">
                     <div class="portfolio-image placeholder-image bedroom-1">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-label">Before & After</span>
+                            <span class="portfolio-label">Interior</span>
                         </div>
                     </div>
                     <h4>Master Bedroom Suite</h4>
@@ -141,134 +171,161 @@
                 <div class="portfolio-item">
                     <div class="portfolio-image placeholder-image exterior-3">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-label">Before & After</span>
+                            <span class="portfolio-label">Exterior</span>
                         </div>
                     </div>
                     <h4>Farmhouse Exterior</h4>
-                    <p>Classic white farmhouse with dark green trim accents</p>
+                    <p>White body, dark green trim — a classic that doesn't age</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission Statement Section -->
-    <section id="about" class="mission">
+    <!-- Mission -->
+    <section class="mission" id="about">
         <div class="container">
-            <div class="section-header">
-                <div class="ornamental-line"></div>
-                <h2>Mission Statement</h2>
-                <div class="ornamental-line"></div>
+            <div class="section-header reveal reveal-1">
+                <span class="section-label">Our Approach</span>
+                <h2>Why It Matters</h2>
+                <span class="gold-rule"></span>
             </div>
-            <div class="values-grid">
-                <div class="value-card">
-                    <p>Every brush stroke reflects our dedication to the time-honored traditions of quality painting. We don't cut corners—we take pride in doing the job right. Every brush stroke reflects our dedication to the time-honored traditions of quality painting. We don't cut corners—we take pride in doing the job right.
-                       Every brush stroke reflects our dedication to the time-honored traditions of quality painting. We don't cut corners—we take pride in doing the job right.
-                       Every brush stroke reflects our dedication to the time-honored traditions of quality painting. We don't cut corners—we take pride in doing the job right.
-                       Every brush stroke reflects our dedication to the time-honored traditions of quality painting. We don't cut corners—we take pride in doing the job right.
-                    </p>
+            <div class="mission-body">
+                <div class="mission-text reveal reveal-2">
+                    <p>Good painting is mostly preparation. Anyone can roll paint on a wall. What separates a lasting job from one that peels or looks tired in two years is what happens before the first brush stroke &mdash; cleaning, sanding, priming correctly, choosing the right products for the surface and climate.</p>
+                    <p>We are a small, owner-operated business. The person who walks your home for the estimate is the same person on the job. We don't oversell, we don't rush, and we don't disappear after the check clears.</p>
+                </div>
+                <div class="mission-values reveal reveal-3">
+                    <div class="mission-value">
+                        <span class="mission-value-num">01</span>
+                        <div>
+                            <h4>Craft Over Speed</h4>
+                            <p>We set realistic timelines and hold them. Rushed prep is the most common reason paint fails early.</p>
+                        </div>
+                    </div>
+                    <div class="mission-value">
+                        <span class="mission-value-num">02</span>
+                        <div>
+                            <h4>Honest Estimates</h4>
+                            <p>Detailed, line-by-line estimates at no cost. No surprise charges when the job is complete.</p>
+                        </div>
+                    </div>
+                    <div class="mission-value">
+                        <span class="mission-value-num">03</span>
+                        <div>
+                            <h4>Your Home, Respected</h4>
+                            <p>We protect your furniture, your floors, and your time. We leave the space clean.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="testimonial">
-         <div class="container">
-            <div class="section-header">
-                <div class="ornamental-line"></div>
-                <h2>What Our Clients Say</h2>
-                <div class="ornamental-line"></div>
+    <!-- Testimonials -->
+    <section class="testimonial">
+        <div class="container">
+            <div class="section-header section-header--centered reveal reveal-1">
+                <span class="section-label">From Our Clients</span>
+                <h2>What People Say</h2>
+                <span class="gold-rule"></span>
             </div>
             <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <p>"Caden Mullen Painting transformed our home with exceptional craftsmanship and attention to detail. The team was professional, reliable, and the results exceeded our expectations. Highly recommend!"</p>
-                    <span class="testimonial-author">- Sarah J., Homeowner</span>
+                <div class="testimonial-card reveal reveal-2">
+                    <p>"Caden did a great job with much attention to detail. Also great at the daily cleanup."</p>
+                    <span class="testimonial-author">Brett Reaser &mdash; Millersville, PA</span>
+                    <span class="testimonial-date">April 2025</span>
                 </div>
-                <div class="testimonial-card">
-                    <p>"From start to finish, Caden Mullen Painting provided outstanding service. They were communicative, punctual, and the quality of their work is truly impressive. Our house looks amazing!"</p>
-                    <span class="testimonial-author">- Mark T., Homeowner</span>
+                <div class="testimonial-card reveal reveal-3">
+                    <p>"We would recommend Caden to family and friends! He transformed our space. From start to finish he communicated everything very clearly. He was very detailed and thorough with our project. All preparation work and clean up was wonderful. We would hire Caden for any future painting needs!"</p>
+                    <span class="testimonial-author">Elijah &amp; Bekka</span>
+                    <span class="testimonial-date">February 2026</span>
                 </div>
-                <div class="testimonial-card">
-                    <p>"We couldn't be happier with the interior painting job done by Caden Mullen Painting. The team was meticulous in their preparation and execution, resulting in a flawless finish that has completely refreshed our living space."</p>
-                    <span class="testimonial-author">- Emily R., Homeowner</span>
+                <div class="testimonial-card reveal reveal-4">
+                    <p>"We had a great experience with Caden Mullen Painting from start to finish, on multiple different projects. Caden’s attention to detail really stood out. Caden does not rush anything and his work is clean and perfect before calling the job done. The quality of the work speaks for itself, and you can tell he takes pride in what he does. Communication is and always was excellent the whole time. He was easy to get in touch with, showed up when he said he would, and kept us updated throughout the project. On top of that, his pricing was very fair compared to other quotes we received. Sometimes we even run other quotes by him to make sure other painters aren't taking advantage of us. What we liked alot about Caden was his willingness to come back and touch up anything we noticed afterward without hesitation. It’s rare to find someone this reliable and professional these days. We recommend him for anything."</p>
+                    <span class="testimonial-author">Denis &mdash; Lancaster, PA</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our Process-->
-    <section id="process" class="process">
+    <!-- Process -->
+    <section class="process" id="process">
         <div class="container">
-            <div class="section-header">
-                <div class="ornamental-line"></div>
+            <div class="section-header section-header--centered reveal reveal-1">
+                <span class="section-label">How We Work</span>
                 <h2>Our Process</h2>
-                <div class="ornamental-line"></div>
+                <span class="gold-rule"></span>
             </div>
             <div class="process-steps">
-                <div class="process-step">
-                    <h3>1. Consultation & Estimate</h3>
-                    <p>We start with a thorough consultation to understand your vision and assess the project scope at no cost. Our detailed estimates are transparent and tailored to your specific needs.</p>
+                <div class="process-step reveal reveal-2">
+                    <span class="process-step-num">Step 01</span>
+                    <h3>Consultation &amp; Estimate</h3>
+                    <p>We walk the project with you, ask the right questions, and return a clear written estimate within a few days. No obligation.</p>
                 </div>
-                <div class="process-step">
-                    <h3>2. Surface Preparation</h3>
-                    <p>Proper preparation is key to a lasting paint job. We meticulously clean, sand, and prime all surfaces to ensure optimal paint adhesion and a flawless finish.</p>
+                <div class="process-step reveal reveal-3">
+                    <span class="process-step-num">Step 02</span>
+                    <h3>Surface Preparation</h3>
+                    <p>Clean, sand, caulk, prime. Every surface receives the attention it actually needs &mdash; not the minimum that gets overlooked.</p>
                 </div>
-                <div class="process-step">
-                    <h3>3. Expert Painting</h3>
-                    <p>Our skilled painters apply high-quality paints with precision and care. We pay close attention to detail, ensuring clean lines, even coverage, and a beautiful result.</p>
+                <div class="process-step reveal reveal-4">
+                    <span class="process-step-num">Step 03</span>
+                    <h3>Painting</h3>
+                    <p>Quality materials applied correctly. We don't thin paint to make it go further and we don't skip coats to finish early.</p>
                 </div>
-                <div class="process-step">
-                    <h3>4. Final Inspection & Cleanup</h3>
-                    <p>We conduct a thorough final inspection to ensure every aspect of the job meets our high standards. We also clean up the work area, leaving your home spotless and ready to enjoy.</p>
+                <div class="process-step reveal reveal-5">
+                    <span class="process-step-num">Step 04</span>
+                    <h3>Walkthrough &amp; Cleanup</h3>
+                    <p>We walk the finished work with you before we leave. Touch-ups addressed on the spot. Site left clean.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
+    <!-- FAQ -->
+    <section class="faq" id="faq">
         <div class="container">
-            <div class="section-header">
-                <div class="ornamental-line"></div>
-                <h2>Frequently Asked Questions</h2>
-                <div class="ornamental-line"></div>
+            <div class="section-header reveal reveal-1">
+                <span class="section-label">Questions</span>
+                <h2>Common Questions</h2>
+                <span class="gold-rule"></span>
             </div>
             <div class="faq-items">
-                <div class="faq-item">
-                    <h3>How do I choose the right paint colors?</h3>
-                    <p>We offer expert color consultation services to help you select the perfect palette for your home. We consider your style preferences, lighting, and existing decor to recommend colors that will enhance your space.</p>
+                <div class="faq-item reveal reveal-2">
+                    <h3>How do I choose colors?</h3>
+                    <p>We offer color consultation as part of the estimate process. We consider your lighting, your furnishings, and the architecture of your home &mdash; not just what's trending.</p>
                 </div>
-                <div class="faq-item">
-                    <h3>How long does a typical painting project take?</h3>
-                    <p>Project timelines vary based on the scope of work, but we strive to complete most residential painting projects within 1-2 weeks. We provide a detailed schedule during the consultation phase.</p>
+                <div class="faq-item reveal reveal-3">
+                    <h3>How long does a project take?</h3>
+                    <p>Most residential interiors take one to five days depending on scope. Exteriors vary with weather. We build a realistic schedule during the estimate and communicate any changes promptly.</p>
                 </div>
-                <div class="faq-item">
-                    <h3>Do you use eco-friendly paints?</h3>
-                    <p>Yes, we offer a range of low-VOC and eco-friendly paint options that are safe for your family and the environment without compromising on quality or durability.</p>
+                <div class="faq-item reveal reveal-4">
+                    <h3>Do you use low-VOC paints?</h3>
+                    <p>Yes &mdash; we offer low-VOC and zero-VOC options from quality manufacturers. We'll recommend the right product for your specific project and circumstances.</p>
                 </div>
-                <div class="faq-item">
-                    <h3>Is your work guaranteed?</h3>
-                    <p>We stand behind the quality of our work with a satisfaction guarantee. If you're not completely happy with the results, we will work with you to make it right.</p>
+                <div class="faq-item reveal reveal-5">
+                    <h3>Is the work guaranteed?</h3>
+                    <p>We stand behind what we do. If something doesn't meet the standard we agreed on, we come back and make it right.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Contact -->
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header">
-                <div class="ornamental-line"></div>
-                <h2>Get In Touch</h2>
-                <div class="ornamental-line"></div>
+            <div class="section-header reveal reveal-1">
+                <span class="section-label">Get in Touch</span>
+                <h2>Request an Estimate</h2>
+                <span class="gold-rule"></span>
             </div>
             <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Ready to Transform Your Home?</h3>
-                    <p>Contact us today for a free estimate. We serve homeowners throughout the region with professional painting services you can trust.</p>
+                <div class="contact-info reveal reveal-2">
+                    <h3>Let's Talk About Your Project</h3>
+                    <p>Estimates are free, detailed, and come with no pressure. We serve homeowners throughout Central Pennsylvania.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <span class="contact-label">Phone</span>
-                            <a href="tel:555-123-4567">(555) 123-4567</a>
+                            <a href="tel:5551234567">(555) 123-4567</a>
                         </div>
                         <div class="contact-item">
                             <span class="contact-label">Email</span>
@@ -280,24 +337,24 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form reveal reveal-3">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" placeholder="Optional">
                     </div>
                     <div class="form-group">
                         <label for="message">Tell us about your project</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <textarea id="message" name="message" rows="4" placeholder="Interior, exterior, scope, timeline..." required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Request Free Estimate</button>
+                    <button type="submit" class="btn btn-primary">Send Request</button>
                 </form>
             </div>
         </div>
@@ -316,100 +373,26 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
     <style>
-    /* Kitchen before/after hover effect */
     .kitchen-hover {
         position: relative;
         overflow: hidden;
-        height: 300px;
+        height: 260px;
         background: none;
     }
     .kitchen-hover .kitchen-before,
     .kitchen-hover .kitchen-after {
-        width: 100%;
-        height: 100%;
+        width: 100%; height: 100%;
         object-fit: cover;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: opacity 0.5s;
+        position: absolute; top: 0; left: 0;
+        transition: opacity 0.5s ease;
     }
-    .kitchen-hover .kitchen-before {
-        z-index: 1;
-        opacity: 1;
-    }
-    .kitchen-hover .kitchen-after {
-        z-index: 2;
-        opacity: 0;
-    }
-    .kitchen-hover:hover .kitchen-after {
-        opacity: 1;
-    }
-    .kitchen-hover:hover .kitchen-before {
-        opacity: 0;
-    }
-    .kitchen-hover .portfolio-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 3;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding: 2rem;
-        pointer-events: none;
-    }
-
-    /* Testimonials Section */
-    .testimonial {
-        background: var(--cream-dark);
-        padding: 6rem 0;
-    }
-    .testimonial-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 2.5rem;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    .testimonial-card {
-        background: var(--cream);
-        border: 2px solid var(--gold);
-        border-radius: 12px;
-        box-shadow: 0 4px 16px rgba(44,36,22,0.06);
-        padding: 2.5rem 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        transition: box-shadow 0.3s, border-color 0.3s;
-    }
-    .testimonial-card:hover {
-        box-shadow: 0 8px 32px rgba(44,36,22,0.12);
-        border-color: var(--green-dark);
-    }
-    .testimonial-card p {
-        font-size: 1.2rem;
-        color: var(--text-medium);
-        font-style: italic;
-        margin-bottom: 1.5rem;
-        font-family: var(--font-body);
-    }
-    .testimonial-author {
-        font-family: var(--font-display);
-        color: var(--gold);
-        font-size: 1rem;
-        letter-spacing: 1px;
-    }
-    @media (max-width: 900px) {
-        .testimonial-grid {
-            grid-template-columns: 1fr;
-        }
-    }
+    .kitchen-hover .kitchen-before { z-index:1; opacity:1; }
+    .kitchen-hover .kitchen-after  { z-index:2; opacity:0; }
+    .kitchen-hover:hover .kitchen-after  { opacity:1; }
+    .kitchen-hover:hover .kitchen-before { opacity:0; }
+    .kitchen-hover .portfolio-overlay { z-index:3; pointer-events:none; }
     </style>
+    <script src="script.js"></script>
 </body>
 </html>

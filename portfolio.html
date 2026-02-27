@@ -6,7 +6,7 @@
     <title>Our Work | Caden Mullen Painting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,34 +17,39 @@
                 <div class="logo-text">
                     <a href="index.html" style="text-decoration:none;">
                         <h1>Caden Mullen</h1>
-                        <span class="subtitle">Painting LLC</span>
+                        <span class="subtitle">Painting &amp; Finishing &mdash; Est. Central PA</span>
                     </a>
                 </div>
             </div>
-            <nav class="nav">
+            <nav class="nav" id="main-nav">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
             </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio -->
     <section class="portfolio">
         <div class="container">
-            <div class="section-header">
-                <div class="ornamental-line"></div>
-                <h2>Our Work</h2>
-                <div class="ornamental-line"></div>
+            <div class="portfolio-header-wrap">
+                <div class="section-header reveal reveal-1">
+                    <span class="section-label">Our Work</span>
+                    <h2>Recent Projects</h2>
+                    <span class="gold-rule"></span>
+                </div>
+                <p class="portfolio-intro reveal reveal-2">Every project photographed before and after &mdash; because the work should speak for itself.</p>
             </div>
-            <p class="portfolio-intro">Every project is a testament to our commitment to quality and craftsmanship</p>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-image interior-1">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-label">Before & After</span>
+                            <span class="portfolio-label">Interior</span>
                         </div>
                     </div>
                     <h4>Living Room Revival</h4>
@@ -53,35 +58,27 @@
                 <div class="portfolio-item">
                     <div class="portfolio-image exterior-1">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-label">Before & After</span>
+                            <span class="portfolio-label">Exterior</span>
                         </div>
                     </div>
                     <h4>Victorian Exterior</h4>
                     <p>Historic home exterior restoration with period-appropriate colors</p>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-image" style="background:none;padding:0;height:auto;">
-                        <div style="display:flex;gap:1rem;justify-content:center;align-items:center;">
-                            <figure style="margin:0;text-align:center;">
-                                <img src="static/beforeKitchen.webp" alt="Kitchen Before" style="width:180px;height:auto;border-radius:8px;border:2px solid var(--green-dark);box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-                                <figcaption style="font-size:1rem;color:var(--text-medium);margin-top:0.5rem;">Before</figcaption>
-                            </figure>
-                            <figure style="margin:0;text-align:center;">
-                                <img src="static/afterKitchen.webp" alt="Kitchen After" style="width:180px;height:auto;border-radius:8px;border:2px solid var(--gold);box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-                                <figcaption style="font-size:1rem;color:var(--text-medium);margin-top:0.5rem;">After</figcaption>
-                            </figure>
-                        </div>
+                    <div class="portfolio-image kitchen-hover">
+                        <img src="static/beforeKitchen.webp" alt="Kitchen Before" class="kitchen-before">
+                        <img src="static/afterKitchen.webp" alt="Kitchen After" class="kitchen-after">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-label">Kitchen Before & After</span>
+                            <span class="portfolio-label">Hover to see After</span>
                         </div>
                     </div>
                     <h4>Kitchen Cabinet Refresh</h4>
-                    <p>Professional cabinet painting for a modern, updated look</p>
+                    <p>Cabinet painting &mdash; a transformed kitchen without a renovation</p>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image exterior-2">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-label">Before & After</span>
+                            <span class="portfolio-label">Exterior</span>
                         </div>
                     </div>
                     <h4>Deck Restoration</h4>
@@ -90,20 +87,20 @@
                 <div class="portfolio-item">
                     <div class="portfolio-image bedroom-1">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-label">Before & After</span>
+                            <span class="portfolio-label">Interior</span>
                         </div>
                     </div>
                     <h4>Master Bedroom Suite</h4>
-                    <p>Elegant color palette creating a peaceful retreat</p>
+                    <p>Restrained palette, quiet result</p>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image exterior-3">
                         <div class="portfolio-overlay">
-                            <span class="portfolio-label">Before & After</span>
+                            <span class="portfolio-label">Exterior</span>
                         </div>
                     </div>
                     <h4>Farmhouse Exterior</h4>
-                    <p>Classic white farmhouse with dark green trim accents</p>
+                    <p>White body, dark green trim &mdash; a classic that doesn't age</p>
                 </div>
             </div>
         </div>
@@ -117,10 +114,25 @@
                     <span>Caden Mullen Painting LLC</span>
                 </div>
                 <p class="footer-tagline">Quality craftsmanship, rooted in tradition</p>
-                <p class="footer-copy">&copy; 2024 Caden Mullen Painting LLC. All rights reserved.</p>
+                <p class="footer-copy">&copy; 2026 Caden Mullen Painting LLC. All rights reserved.</p>
             </div>
         </div>
     </footer>
+    <style>
+    .kitchen-hover {
+        position: relative; overflow: hidden; height: 260px; background: none;
+    }
+    .kitchen-hover .kitchen-before,
+    .kitchen-hover .kitchen-after {
+        width:100%; height:100%; object-fit:cover;
+        position:absolute; top:0; left:0; transition: opacity 0.5s ease;
+    }
+    .kitchen-hover .kitchen-before { z-index:1; opacity:1; }
+    .kitchen-hover .kitchen-after  { z-index:2; opacity:0; }
+    .kitchen-hover:hover .kitchen-after  { opacity:1; }
+    .kitchen-hover:hover .kitchen-before { opacity:0; }
+    .kitchen-hover .portfolio-overlay { z-index:3; pointer-events:none; }
+    </style>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | Caden Mullen Painting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --evergreen: #1C3A2E;
+            --evergreen-mid: #2A5240;
+            --gold: #A8874A;
+            --cream: #F6F1E9;
+            --text-dark: #1A1510;
+            --text-mid: #4A4032;
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Jost', 'Gill Sans', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--cream);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .coming-soon-container {
+            max-width: 600px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo-coming {
+            margin-bottom: 40px;
+        }
+
+        .logo-coming h1 {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            color: var(--evergreen);
+            font-weight: 400;
+            margin-bottom: 5px;
+            letter-spacing: -1px;
+        }
+
+        .logo-coming .subtitle {
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            color: var(--gold);
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .coming-content {
+            margin-bottom: 50px;
+        }
+
+        .coming-content h2 {
+            font-family: var(--font-display);
+            font-size: 2.8rem;
+            color: var(--evergreen);
+            margin-bottom: 20px;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .coming-content p {
+            font-size: 1.1rem;
+            color: var(--text-mid);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .login-form {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 40px;
+        }
+
+        .login-form h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--evergreen);
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 1rem;
+            border: 2px solid #E3D9C5;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            background-color: #FAFAF7;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--gold);
+            background-color: white;
+            box-shadow: 0 0 0 3px rgba(168, 135, 74, 0.1);
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 12px 20px;
+            font-size: 1rem;
+            background-color: var(--evergreen);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: var(--font-body);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn-login:hover {
+            background-color: var(--evergreen-mid);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(28, 58, 46, 0.25);
+        }
+
+        .btn-login:active {
+            transform: translateY(0);
+        }
+
+        .error-message {
+            color: #d32f2f;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            display: none;
+            padding: 10px;
+            background-color: #ffebee;
+            border-radius: 4px;
+        }
+
+        .success-message {
+            color: #388e3c;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            display: none;
+            padding: 10px;
+            background-color: #e8f5e9;
+            border-radius: 4px;
+        }
+
+        .divider {
+            margin: 25px 0;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .hint {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-style: italic;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #E3D9C5;
+        }
+
+        @media (max-width: 600px) {
+            .logo-coming h1 {
+                font-size: 2.5rem;
+            }
+
+            .coming-content h2 {
+                font-size: 2rem;
+            }
+
+            .login-form {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon-container">
+        <div class="logo-coming">
+            <h1>Caden Mullen</h1>
+            <span class="subtitle">Painting</span>
+        </div>
+
+        <div class="coming-content">
+            <h2>Coming Soon</h2>
+            <p>We're preparing something special for you.</p>
+            <p>Our new website is launching soon. Enter the secret password to access the preview.</p>
+        </div>
+
+        <div class="login-form">
+            <h3>Preview Access</h3>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="btn-login">Access Site</button>
+                <div class="error-message" id="error-message">Incorrect password. Please try again.</div>
+                <div class="success-message" id="success-message">Welcome! Redirecting...</div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Authentication logic
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const correctPassword = 'painting';
+            const errorMsg = document.getElementById('error-message');
+            const successMsg = document.getElementById('success-message');
+            
+            errorMsg.style.display = 'none';
+            successMsg.style.display = 'none';
+
+            if (password === correctPassword) {
+                // Store authentication in sessionStorage
+                sessionStorage.setItem('painting', 'true');
+                successMsg.style.display = 'block';
+                
+                // Redirect to home page after a short delay
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 500);
+            } else {
+                errorMsg.style.display = 'block';
+                document.getElementById('password').value = '';
+                document.getElementById('password').focus();
+            }
+        });
+
+        // If already authenticated, redirect to home
+        if (sessionStorage.getItem('painting') === 'true') {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
